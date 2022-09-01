@@ -1,0 +1,43 @@
+
+<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+    
+<local:MyCard Title="WSH组织 专用客户端 ">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4"
+                   Text="这个启动器已经设置好了，你只需要登陆账号即可开始游玩。" />
+        <TextBlock Margin="0,0,0,4"
+                   Text="如果有问题请加群：909603414" />
+                   
+        <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="刷新" EventType="刷新主页" ToolTip="刷新公告和文档" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="WSH组织公告" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,6,0,0"
+                   Text="在这里发布公告" />
+    </StackPanel>
+</local:MyCard>
+
+<!--
+</local:MyCard>
+<local:MyCard Title="Impact客户端使用" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="这里不提供中文翻译。百度是个好东西" />
+        <TextBlock Margin="0,6,0,0"
+                   Text="未完待续..." />
+    </StackPanel>
+</local:MyCard>
+-->
+    
+<local:MyCard Title="Baritone教学" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,6,0,0"
+                   Text="未完待续..." />
+    </StackPanel>
+</local:MyCard>
+    
